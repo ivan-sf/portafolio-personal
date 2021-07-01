@@ -137,7 +137,6 @@ header h1 a:hover .fa-hidden{
     height: 150px;
     width: 150px;
     background-color: var(--text-color-active);
-    transition: 5s;
 }
 .banner .box:before{
     content: "";
@@ -575,22 +574,59 @@ footer a{
         height: 450px;
         background-color: var(--text-color-active);
     }
+    .banner .box{
+        position: absolute;
+        top: 200px;
+        right: 200px;
+        height: 100px;
+        width: 150px;
+        background-color: var(--text-color-active);
+    }
+    .banner .box:before{
+        content: "";
+        position: absolute;
+        right: 100%;
+        height: 0px;
+        width: 0px;
+        background-color: var(--text-color-hover);
+    }
+    .banner .box:after{
+        content: "";
+        position: absolute;
+        top: -150px;
+        height: 300px;
+        width: 100px;
+        background-color: var(--text-color-hover);
+    }
+    .banner .box-2{
+        position: absolute;
+        top: 50px;
+        right: 150px;
+        height: 300px;
+        width: 100px;
+        background-color: var(--text-color-active);
+    }
+    .banner .box-2:after{
+        content: "";
+        position: absolute;
+        right: 100%;
+        height: 300px;
+        width: 100px;
+        background-color: var(--text-color-hover);
+    }
+    .banner .triangle{
+        position: absolute;
+        z-index: 2000;
+        top: 200px;
+        width: 0;
+        right: 50px;
+        height: 0;
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-bottom: 150px solid #ffe553;
+    }
 
-    .right{
-        margin-right: 0vw;
-    }
-    .left{
-        padding-left: 5vw;
-    }
-    header nav{
-        right: 5vw;
-    }
-    .banner .left h1{
-        font-size: 3.5em;
-    }
-    .banner .left h2{
-        font-size: 2.2em;
-    }
+    
 }
 
 @media screen and (max-width: 1024px) {
@@ -662,7 +698,8 @@ footer a{
         height: 450px;
         background-color: var(--text-color-active);
     }
-    .right{
+    .banner .right{
+        background-color: #ffe553;
         margin-left: 0vw;
     }
     .left{
@@ -676,11 +713,13 @@ footer a{
         font-size: 3.5em;
     }
     .banner .left h2{
+        width: 350px;
         font-size: 2.2em;
     }
     .list-hobbies{
         padding-left: 10vw;
     }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -708,146 +747,6 @@ footer a{
         font-size: 1em;
         font-weight: 300;
         z-index: 12000;
-    }
-
-    @media screen and (max-height:600px) {
-        
-        .banner .left h1{
-            font-size: 3.5em;
-        }
-        .banner .left h2{
-            width: 400px;
-            font-size: 1.5em;
-        }
-        .tooltip-box{
-            z-index: 13000;
-            padding:10px;
-            position: absolute;
-            top: 0px;
-            right: 180px;
-        }
-        
-        .banner .box{
-            position: absolute;
-            top: 200px;
-            right: 200px;
-            height: 100px;
-            width: 150px;
-            background-color: var(--text-color-active);
-        }
-        .banner .box:before{
-            content: "";
-            position: absolute;
-            right: 100%;
-            height: 0px;
-            width: 0px;
-            background-color: var(--text-color-hover);
-        }
-        .banner .box:after{
-            content: "";
-            position: absolute;
-            top: -150px;
-            height: 300px;
-            width: 100px;
-            background-color: var(--text-color-hover);
-        }
-        .banner .box-2{
-            position: absolute;
-            top: 50px;
-            right: 150px;
-            height: 300px;
-            width: 100px;
-            background-color: var(--text-color-active);
-        }
-        .banner .box-2:after{
-            content: "";
-            position: absolute;
-            right: 100%;
-            height: 300px;
-            width: 100px;
-            background-color: var(--text-color-hover);
-        }
-        .banner .triangle{
-            position: absolute;
-            z-index: 2000;
-            top: 200px;
-            width: 0;
-            right: 50px;
-            height: 0;
-            border-left: 150px solid transparent;
-            border-right: 150px solid transparent;
-            border-bottom: 150px solid #ffe553;
-        }
-    }
-    @media screen and (max-height:1024px) {
-        
-        .banner .left h1{
-
-            font-size: 5em;
-        }
-        .banner .left h2{
-            width: 100vw;
-            font-size: 2.5em;
-        }
-        .tooltip-box{
-            z-index: 13000;
-            padding:10px;
-            position: absolute;
-            top: 0px;
-            right: 180px;
-        }
-        
-        .banner .box{
-            position: absolute;
-            top: 200px;
-            right: 200px;
-            height: 100px;
-            width: 150px;
-            background-color: var(--text-color-active);
-        }
-        .banner .box:before{
-            content: "";
-            position: absolute;
-            right: 100%;
-            height: 0px;
-            width: 0px;
-            background-color: var(--text-color-hover);
-        }
-        .banner .box:after{
-            content: "";
-            position: absolute;
-            top: -200px;
-            height: 300px;
-            width: 100px;
-            background-color: var(--text-color-hover);
-        }
-        .banner .box-2{
-            position: absolute;
-            top: 0px;
-            right: 150px;
-            height: 300px;
-            width: 100px;
-            background-color: var(--text-color-active);
-        }
-        .banner .box-2:after{
-            content: "";
-            position: absolute;
-            right: 100%;
-            height: 300px;
-            width: 100px;
-            background-color: var(--text-color-hover);
-        }
-        .banner .triangle{
-            position: absolute;
-            z-index: 2000;
-            top: 150px;
-            width: 0;
-            right: 50px;
-            height: 0;
-            border-left: 150px solid transparent;
-            border-right: 150px solid transparent;
-            border-bottom: 150px solid #ffe553;
-        }
-    }
+    }   
     
 }
