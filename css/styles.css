@@ -188,6 +188,7 @@ header h1 a:hover .fa-hidden{
     color: #fff;
 }
 .tooltip-box{
+    z-index: 20000;
     visibility: hidden;
     width: 200px;
     height: 85px;
