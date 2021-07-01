@@ -707,6 +707,9 @@ footer a{
         padding-left: 0vw;
         margin-right: 50vw;
     }
+    header{
+        width: 60vw;
+    }
     header nav{
         right: 5vw;
     }
@@ -717,37 +720,14 @@ footer a{
         width: 350px;
         font-size: 2.2em;
     }
-    .list-hobbies{
-        padding-left: 10vw;
+
+    .tweet-profile{
+        width: 450px;
     }
-    
+
+    .tweet-profile h2{
+        font-size: 22pt;
+    }
+
 }
 
-@media screen and (max-width: 768px) {
-    
-    header{
-        width: 60vw;
-        height: 15vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    header nav{
-        z-index: 10000;
-        position: fixed;
-        right: 10vh;
-    }
-    header h1{
-        z-index: 12000;
-    }
-    header h1 a{
-        font-size: 1em;
-        font-weight: 700;
-    }
-    header span{
-        font-size: 1em;
-        font-weight: 300;
-        z-index: 12000;
-    }   
-    
-}
