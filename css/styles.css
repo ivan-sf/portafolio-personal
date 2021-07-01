@@ -1254,7 +1254,7 @@ footer a{
     .banner .box{
         position: absolute;
         top: 200px;
-        right: 100px;
+        right: 50px;
         height: 0;
         width: 30px;
         background-color: var(--text-color-active);
@@ -1271,7 +1271,7 @@ footer a{
     .banner .box-2{
         position: absolute;
         top: 50px;
-        right: 100px;
+        right: 50px;
         height: 200px;
         width: 60px;
         background-color: var(--text-color-active);
@@ -1289,7 +1289,7 @@ footer a{
         z-index: 2000;
         top: 100px;
         width: 0;
-        right: 70px;
+        right: 20px;
         height: 0;
         border-left: 60px solid transparent;
         border-right: 60px solid transparent;
