@@ -823,7 +823,7 @@ footer a{
         }
         .banner .box-2{
             position: absolute;
-            top: 50px;
+            top: 0px;
             right: 150px;
             height: 300px;
             width: 100px;
@@ -840,7 +840,7 @@ footer a{
         .banner .triangle{
             position: absolute;
             z-index: 2000;
-            top: 200px;
+            top: 150px;
             width: 0;
             right: 50px;
             height: 0;
