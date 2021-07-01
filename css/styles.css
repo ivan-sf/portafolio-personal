@@ -243,13 +243,7 @@ header h1 a:hover .fa-hidden{
     z-index: 1000;
     opacity: .5;
 }
-.carousel h2 span{
-    color: var(--text-color-active);
-    opacity: 1;
-}
-.carousel h2 a{
-    color: var(--text-color-hover);
-}
+
 .glider-elemento{
     display: flex;
     justify-content: center;
@@ -262,12 +256,12 @@ header h1 a:hover .fa-hidden{
 }
 .glider-prev i{
     font-size: 2em;
-    color: var(--text-color-active);
+    color: #000;
     opacity: .5;
 }
 .glider-next i{
     font-size: 2em;
-    color: var(--text-color-active);
+    color: #000;
     opacity: .5;
 }
 .glider-next{
@@ -298,7 +292,7 @@ header h1 a:hover .fa-hidden{
     width: 100vw;
     height: 100vh;
     transition: .7s;
-    background-color: var(--text-color-hover);
+    background-color: var(--text-color-active);
     position: absolute;
     top: 0;
     left: 0;
@@ -374,7 +368,8 @@ header h1 a:hover .fa-hidden{
     bottom: 0;
     left: 0;
     display: flex;
-    justify-content: center;
+    justify-content: center;768
+
 }
 .list-rss a{
     font-size: 30px;
@@ -434,12 +429,10 @@ footer a{
     }
     .glider-prev i{
     font-size: 3em;
-    color: var(--text-color-active);
     opacity: .5;
     }
     .glider-next i{
         font-size: 3em;
-        color: var(--text-color-active);
         opacity: .7;
     }
     .glider-next{
@@ -465,14 +458,17 @@ footer a{
         top: 300px;
         left: 400px;
         z-index: 1000;
-        opacity: .5;
     }
     .carousel h2 span{
-        color: var(--text-color-active);
+        font-style: oblique;
+        font-size: 50px;
+        color: #000;
+        font-weight: 900;
         opacity: 1;
     }
     .carousel h2 a{
-        color: var(--text-color-hover);
+        color: #000;
+        font-weight: 900;
     }
     .circle{
         position: absolute;
@@ -523,15 +519,9 @@ footer a{
         top: 250px;
         left: 250px;
         z-index: 1000;
-        opacity: .5;
-    }
-    .carousel h2 span{
-        color: var(--text-color-active);
         opacity: 1;
     }
-    .carousel h2 a{
-        color: var(--text-color-hover);
-    }
+  
     .glider-elemento{
         display: flex;
         justify-content: center;
@@ -544,12 +534,10 @@ footer a{
     }
     .glider-prev i{
         font-size: 2em;
-        color: var(--text-color-active);
         opacity: .5;
     }
     .glider-next i{
         font-size: 2em;
-        color: var(--text-color-active);
         opacity: .5;
     }
     .glider-next{
@@ -647,15 +635,9 @@ footer a{
         top: 200px;
         left: 150px;
         z-index: 1000;
-        opacity: .5;
-    }
-    .carousel h2 span{
-        color: var(--text-color-active);
         opacity: 1;
     }
-    .carousel h2 a{
-        color: var(--text-color-hover);
-    }
+
     .glider-elemento{
         display: flex;
         justify-content: center;
@@ -668,12 +650,10 @@ footer a{
     }
     .glider-prev i{
         font-size: 2em;
-        color: var(--text-color-active);
         opacity: .5;
     }
     .glider-next i{
         font-size: 2em;
-        color: var(--text-color-active);
         opacity: .5;
     }
     .glider-next{
@@ -729,5 +709,516 @@ footer a{
         font-size: 22pt;
     }
 
+}
+
+
+@media screen and (max-width: 768px) {
+    .carousel h1{
+        left: 80px;
+        width: 100px;
+        font-size: 1.8em;
+        font-weight: 700;
+        z-index: 1000;
+        letter-spacing: 8px;
+    }
+    .carousel h2{
+        position: absolute;
+        width: 100px;
+        font-size: 1em;
+        font-weight: 500;
+        top: 200px;
+        left: 80px;
+        z-index: 1000;
+        opacity: 1;
+    }
+    .carousel h2 span{
+        font-weight: 900;
+        font-style: oblique;
+        opacity: 1;
+    }
+    .carousel h2 a{
+        font-weight: 900;
+        font-style: oblique;
+    }
+    .glider-elemento{
+        display: flex;
+        justify-content: center;
+    }
+    .glider img{
+        max-width: 420px;
+        height: 400px;
+        top: 50px;
+        right: 70px;
+    }
+    .glider-prev{
+        margin-left: 25px;
+    }
+    .glider-prev i{
+        font-size: 2em;
+        opacity: .5;
+    }
+    .glider-next i{
+        font-size: 2em;
+        opacity: .5;
+    }
+    .glider-next{
+        margin-right: 25px;
+    }
+    .glider-img-1{
+        margin-bottom: 50px;
+    }
+    .circle{
+        position: absolute;
+        top: 50px;
+        width: 400px;
+        height: 400px;
+        background-color: var(--text-color-hover);
+        border-radius: 50%;
+    }
+    .elemento-2 .box{
+        position: absolute;
+        width: 400px;
+        height: 450px;
+        background-color: var(--text-color-active);
+    }
+    .banner .right{
+        background-color: #ffe553;
+        margin-left: 0vw;
+    }
+    .left{
+        padding-left: 0vw;
+        margin-right: 50vw;
+    }
+    header{
+        width: 60vw;
+    }
+    header nav{
+        right: 5vw;
+    }
+    .banner .left h1{
+        font-size: 3.5em;
+    }
+    .banner .left h2{
+        width: 350px;
+        font-size: 2.2em;
+    }
+
+    .tweet-profile{
+        width: 300px;
+    }
+
+    .tweet-profile h2{
+        font-size: 16pt;
+    }
+
+        
+    .list-hobbies{
+        font-family: 'Roboto', sans-serif;
+        margin-top: 120px;
+        line-height : 10px;
+        padding-left: 5vw;
+    }
+
+    .list-hobbies h3{
+        color: #000;
+        font-size: 15pt;
+        font-weight: 800;
+        font-style: oblique;
+        text-decoration: underline;
+        letter-spacing: 2px;
+    }
+    .list-hobbies ul{
+        line-height: 50px;
+        margin-top: 30px;
+    }
+
+    .list-hobbies ul li{
+        font-size: 13pt;
+        list-style: none;
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .carousel h1{
+        left: 50px;
+        width: 100px;
+        font-size: 1.4em;
+        font-weight: 700;
+        z-index: 1000;
+        letter-spacing: 8px;
+    }
+    .carousel h2{
+        position: absolute;
+        width: 100px;
+        font-size: 1em;
+        font-weight: 500;
+        top: 200px;
+        left: 50px;
+        z-index: 1000;
+        opacity: 1;
+    }
+    .carousel h2 span{
+        font-weight: 900;
+        font-style: oblique;
+        opacity: 1;
+    }
+    .carousel h2 a{
+        font-weight: 900;
+        font-style: oblique;
+    }
+    .glider-elemento{
+        display: flex;
+        justify-content: center;
+    }
+    .glider img{
+        max-width: 320px;
+        height: 300px;
+        top: 50px;
+        right: 70px;
+    }
+    .glider-prev{
+        margin-left: 25px;
+    }
+    .glider-prev i{
+        font-size: 2em;
+        opacity: .5;
+    }
+    .glider-next i{
+        font-size: 2em;
+        opacity: .5;
+    }
+    .glider-next{
+        margin-right: 25px;
+    }
+    .glider-img-1{
+        margin-bottom: 50px;
+    }
+    .circle{
+        position: absolute;
+        top: 50px;
+        width: 300px;
+        height: 300px;
+        background-color: var(--text-color-hover);
+        border-radius: 50%;
+    }
+    .elemento-2 .box{
+        position: absolute;
+        width: 300px;
+        height: 350px;
+        background-color: var(--text-color-active);
+    }
+    .banner .right{
+        margin-left: 0vw;
+    }
+    .left{
+        padding-left: 0vw;
+        margin-right: 61vw;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        width: 100vw;
+    }
+    header nav{
+        right: 5vw;
+    }
+    header span{
+        display: none;
+    }
+    .banner .left h1{
+        font-size: 3.5em;
+    }
+    .banner .left h2{
+        width: 350px;
+        font-size: 2.2em;
+    }
+
+    .tweet-profile{
+        width: 300px;
+    }
+
+    .tweet-profile h2{
+        font-size: 16pt;
+    }
+
+        
+    .list-hobbies{
+        font-family: 'Roboto', sans-serif;
+        margin-top: 120px;
+        line-height : 10px;
+        padding-left: 5vw;
+    }
+
+    .list-hobbies h3{
+        color: #000;
+        font-size: 15pt;
+        font-weight: 800;
+        font-style: oblique;
+        text-decoration: underline;
+        letter-spacing: 2px;
+    }
+    .list-hobbies ul{
+        line-height: 50px;
+        margin-top: 30px;
+    }
+
+    .list-hobbies ul li{
+        font-size: 13pt;
+        list-style: none;
+        font-weight: 500;
+    }
+    
+    .banner .box{
+        position: absolute;
+        top: 200px;
+        right: 100px;
+        height: 100px;
+        width: 60px;
+        background-color: var(--text-color-hover);
+    }
+    .banner .box:after{
+        content: "";
+        position: absolute;
+        top: -150px;
+        right: -100%;
+        height: 300px;
+        width: 60px;
+        background-color: var(--text-color-hover);
+    }
+    .banner .box-2{
+        position: absolute;
+        top: 50px;
+        right: 100px;
+        height: 300px;
+        width: 80px;
+        background-color: var(--text-color-active);
+    }
+    .banner .box-2:after{
+        content: "";
+        position: absolute;
+        right: 100%;
+        height: 300px;
+        width: 60px;
+        background-color: var(--text-color-hover);
+    }
+    .banner .triangle{
+        position: absolute;
+        z-index: 2000;
+        top: 200px;
+        width: 0;
+        right: 40px;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 150px solid #ffe553;
+    }
+    .perfil{
+        width: 111vw;
+        height: 115vh;
+        transition: .7s;
+        background-color: var(--text-color-active);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 11000;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        padding-top: 5vh;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .carousel h1{
+        left: 50px;
+        width: 100px;
+        font-size: 1.4em;
+        font-weight: 700;
+        z-index: 1000;
+        letter-spacing: 8px;
+    }
+    .carousel h2{
+        position: absolute;
+        width: 100px;
+        font-size: 1em;
+        font-weight: 500;
+        top: 200px;
+        left: 50px;
+        z-index: 1000;
+        opacity: 1;
+    }
+    .carousel h2 span{
+        font-size: 30px;
+        font-weight: 900;
+        font-style: oblique;
+        opacity: 1;
+    }
+    .carousel h2 a{
+        font-weight: 900;
+        font-style: oblique;
+    }
+    .glider-elemento{
+        display: flex;
+        justify-content: center;
+    }
+    .glider img{
+        max-width: 120px;
+        height: 280px;
+        top: 50px;
+        right: 70px;
+    }
+    .glider-prev{
+        margin-left: 25px;
+    }
+    .glider-prev i{
+        font-size: 2em;
+        opacity: .5;
+    }
+    .glider-next i{
+        font-size: 2em;
+        opacity: .5;
+    }
+    .glider-next{
+        margin-right: 25px;
+    }
+    .glider-img-1{
+        margin-bottom: 50px;
+    }
+    .circle{
+        position: absolute;
+        top: 50px;
+        width: 300px;
+        height: 300px;
+        background-color: var(--text-color-hover);
+        border-radius: 50%;
+    }
+    .elemento-2 .box{
+        position: absolute;
+        width: 300px;
+        height: 350px;
+        background-color: var(--text-color-active);
+    }
+    .banner .right{
+        margin-left: 0vw;
+    }
+    .left{
+        padding-left: 0vw;
+        margin-right: 61vw;
+    }
+
+    header{
+        width: 100vw;
+    }
+    header nav{
+        right: 5vw;
+    }
+    header span{
+        display: none;
+    }
+    .banner .left h1{
+        font-size: 3.5em;
+    }
+    .banner .left h2{
+        width: 350px;
+        font-size: 2.2em;
+    }
+
+    .tweet-profile{
+        width: 300px;
+    }
+
+    .tweet-profile h2{
+        font-size: 16pt;
+    }
+
+        
+    .list-hobbies{
+        font-family: 'Roboto', sans-serif;
+        margin-top: 120px;
+        line-height : 10px;
+        padding-left: 5vw;
+    }
+
+    .list-hobbies h3{
+        color: #000;
+        font-size: 15pt;
+        font-weight: 800;
+        font-style: oblique;
+        text-decoration: underline;
+        letter-spacing: 2px;
+    }
+    .list-hobbies ul{
+        line-height: 50px;
+        margin-top: 30px;
+    }
+
+    .list-hobbies ul li{
+        font-size: 13pt;
+        list-style: none;
+        font-weight: 500;
+    }
+    
+    .banner .box{
+        position: absolute;
+        top: 200px;
+        right: 100px;
+        height: 100px;
+        width: 60px;
+        background-color: var(--text-color-hover);
+    }
+    .banner .box:after{
+        content: "";
+        position: absolute;
+        top: -150px;
+        right: -100%;
+        height: 300px;
+        width: 60px;
+        background-color: var(--text-color-hover);
+    }
+    .banner .box-2{
+        position: absolute;
+        top: 50px;
+        right: 100px;
+        height: 300px;
+        width: 80px;
+        background-color: var(--text-color-active);
+    }
+    .banner .box-2:after{
+        content: "";
+        position: absolute;
+        right: 100%;
+        height: 300px;
+        width: 60px;
+        background-color: var(--text-color-hover);
+    }
+    .banner .triangle{
+        position: absolute;
+        z-index: 2000;
+        top: 200px;
+        width: 0;
+        right: 40px;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 150px solid #ffe553;
+    }
+    .perfil{
+        width: 111vw;
+        height: 115vh;
+        transition: .7s;
+        background-color: var(--text-color-active);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 11000;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        padding-top: 5vh;
+    }
 }
 
