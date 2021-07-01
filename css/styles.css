@@ -6,9 +6,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    --text-color: #000;
-    --text-color-hover: #f53b3b;
-    --text-color-active: #2f4eda;
+    --text-color-black: #000;
+    --text-color-red: #f53b3b;
+    --text-color-blue: #2f4eda;
+    --text-color-yellow: #ffe553;
+    --text-color-background: #ededed;
+    
 }
 
 ::-webkit-scrollbar{
@@ -31,7 +34,7 @@ body{
     width: 100vw;
     min-height: 100vh;
     padding: 5vh 5vw 0vh 5vw;
-    background-color: #EDEDED;
+    background-color: var(---text-color-background);
     overflow-x: hidden;
 }
 
@@ -70,15 +73,15 @@ header ul li{
 }
 header a{
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text-color-black);
     font-size: 1.4em;
     font-weight: 400;
 }
 header ul li a:hover{
-    color: var(--text-color-hover);
+    color: var(--text-color-red);
 }
 header .active{
-    color: var(--text-color-active);
+    color: var(--text-color-blue);
 }
 header .fa-active{
     font-size: .5em;
@@ -107,7 +110,7 @@ header h1 a:hover .fa-hidden{
     font-size: 3.5em;
     font-weight: 900;
     padding-top: 10vh;
-    color: var(--text-color-active);
+    color: var(--text-color-blue);
 }
 .banner .left h2{
     width: 450px;
@@ -127,7 +130,7 @@ header h1 a:hover .fa-hidden{
     text-decoration: underline;
 }
 .banner h2:hover .fa-hidden{
-    color: var(--text-color);
+    color: var(--text-color-black);
     display: inline;
 }
 .banner .box{
@@ -136,7 +139,7 @@ header h1 a:hover .fa-hidden{
     right: 200px;
     height: 150px;
     width: 150px;
-    background-color: var(--text-color-active);
+    background-color: var(--text-color-blue);
 }
 .banner .box:before{
     content: "";
@@ -144,7 +147,7 @@ header h1 a:hover .fa-hidden{
     right: 100%;
     height: 150px;
     width: 150px;
-    background-color: var(--text-color-hover);
+    background-color: var(--text-color-red);
 }
 .banner .box:after{
     content: "";
@@ -153,7 +156,7 @@ header h1 a:hover .fa-hidden{
     right: -100%;
     height: 300px;
     width: 150px;
-    background-color: var(--text-color-hover);
+    background-color: var(--text-color-red);
 }
 .banner .box-2{
     position: absolute;
@@ -161,7 +164,7 @@ header h1 a:hover .fa-hidden{
     right: 200px;
     height: 150px;
     width: 150px;
-    background-color: var(--text-color-active);
+    background-color: var(--text-color-blue);
 }
 .banner .box-2:after{
     content: "";
@@ -169,7 +172,7 @@ header h1 a:hover .fa-hidden{
     right: 100%;
     height: 300px;
     width: 150px;
-    background-color: var(--text-color-hover);
+    background-color: var(--text-color-red);
 }
 .banner .triangle{
     position: absolute;
@@ -180,19 +183,19 @@ header h1 a:hover .fa-hidden{
     height: 0;
     border-left: 225px solid transparent;
     border-right: 225px solid transparent;
-    border-bottom: 250px solid #ffe553;
+    border-bottom: 250px solid var(--text-color-yellow);
 }
 .tooltip{
     width: 10px;
     position: relative;
-    color: #fff;
+    color: var(--text-color-background);
 }
 .tooltip-box{
     z-index: 20000;
     visibility: hidden;
     width: 200px;
     height: 85px;
-    background-color: #000;
+    background-color: var(--text-color-black);
     text-align: center;
     padding:10px;
     position: absolute;
@@ -204,7 +207,7 @@ header h1 a:hover .fa-hidden{
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 25px solid #000;
+    border-top: 25px solid var(--text-color-black);
     position: absolute;
     top: 85px;
     right: 20px;
@@ -256,12 +259,12 @@ header h1 a:hover .fa-hidden{
 }
 .glider-prev i{
     font-size: 2em;
-    color: #000;
+    color: var(--text-color-black);
     opacity: .5;
 }
 .glider-next i{
     font-size: 2em;
-    color: #000;
+    color: var(--text-color-black);
     opacity: .5;
 }
 .glider-next{
@@ -278,21 +281,21 @@ header h1 a:hover .fa-hidden{
     position: absolute;
     width: 400px;
     height: 400px;
-    background-color: var(--text-color-hover);
+    background-color: var(--text-color-red);
     border-radius: 50%;
 }
 .elemento-2 .box{
     position: absolute;
     width: 400px;
     height: 450px;
-    background-color: var(--text-color-active);
+    background-color: var(--text-color-blue);
 }
 
 .perfil{
     width: 100vw;
     height: 100vh;
     transition: .7s;
-    background-color: var(--text-color-active);
+    background-color: var(--text-color-blue);
     position: absolute;
     top: 0;
     left: 0;
@@ -306,7 +309,7 @@ header h1 a:hover .fa-hidden{
 .perfil .close a{
     font-family: 'sans-serif', sans-serif;
     text-decoration: none;
-    color: #000;
+    color: var(--text-color-black);
     position: absolute;
     font-size: 2em;
     top: 8vh;
@@ -329,7 +332,7 @@ header h1 a:hover .fa-hidden{
 }
 
 .tweet-profile h2{
-    color: #000;
+    color: var(--text-color-black);
     font-size: 25pt;
     font-weight: 300;
     letter-spacing: 5px;
@@ -343,7 +346,7 @@ header h1 a:hover .fa-hidden{
 }
 
 .list-hobbies h3{
-    color: #000;
+    color: var(--text-color-black);
     font-size: 20pt;
     font-weight: 800;
     font-style: oblique;
@@ -368,7 +371,7 @@ header h1 a:hover .fa-hidden{
     bottom: 0;
     left: 0;
     display: flex;
-    justify-content: center;768
+    justify-content: center;
 
 }
 .list-rss a{
@@ -399,7 +402,7 @@ footer{
 
 footer span{
     font-size: 20px;
-    color: var(--text-color-hover);
+    color: var(--text-color-red);
 }
 
 footer a{
@@ -462,12 +465,12 @@ footer a{
     .carousel h2 span{
         font-style: oblique;
         font-size: 50px;
-        color: #000;
+        color: var(--text-color-black);
         font-weight: 900;
         opacity: 1;
     }
     .carousel h2 a{
-        color: #000;
+        color: var(--text-color-black);
         font-weight: 900;
     }
     .circle{
@@ -479,13 +482,16 @@ footer a{
         position: absolute;
         width: 400px;
         height: 450px;
-        background-color: var(--text-color-active);
+        background-color: var(--text-color-blue);
     }
     .right{
-        margin-right: 10vw;
+        margin-right: 8vw;
     }
     .left{
-        padding-left: 10vw;
+        padding-left: 8vw;
+    }
+    .left h1{
+        width: 600px;
     }
     header nav{
         right: 5vw;
@@ -500,6 +506,16 @@ footer a{
 }
 
 @media screen and (max-width: 1366px) {
+    .right{
+        margin-right: 5vw;
+    }
+    .left{
+        padding-left: 5vw;
+    }
+    .tooltip-box{
+        top: 25px;
+        right: 60px;
+    }
     
     .carousel h1{
         position: absolute;
@@ -554,22 +570,22 @@ footer a{
         position: absolute;
         width: 400px;
         height: 400px;
-        background-color: var(--text-color-hover);
+        background-color: var(--text-color-red);
         border-radius: 50%;
     }
     .elemento-2 .box{
         position: absolute;
         width: 400px;
         height: 450px;
-        background-color: var(--text-color-active);
+        background-color: var(--text-color-blue);
     }
     .banner .box{
         position: absolute;
-        top: 200px;
+        top: 300px;
         right: 200px;
         height: 100px;
         width: 150px;
-        background-color: var(--text-color-active);
+        background-color: var(--text-color-blue);
     }
     .banner .box:before{
         content: "";
@@ -577,7 +593,7 @@ footer a{
         right: 100%;
         height: 0px;
         width: 0px;
-        background-color: var(--text-color-hover);
+        background-color: var(--text-color-red);
     }
     .banner .box:after{
         content: "";
@@ -585,15 +601,15 @@ footer a{
         top: -150px;
         height: 300px;
         width: 100px;
-        background-color: var(--text-color-hover);
+        background-color: var(--text-color-red);
     }
     .banner .box-2{
         position: absolute;
-        top: 50px;
+        top: 150px;
         right: 150px;
         height: 300px;
         width: 100px;
-        background-color: var(--text-color-active);
+        background-color: var(--text-color-blue);
     }
     .banner .box-2:after{
         content: "";
@@ -601,24 +617,28 @@ footer a{
         right: 100%;
         height: 300px;
         width: 100px;
-        background-color: var(--text-color-hover);
+        background-color: var(--text-color-red);
     }
     .banner .triangle{
         position: absolute;
         z-index: 2000;
-        top: 200px;
+        top: 300px;
         width: 0;
         right: 50px;
         height: 0;
         border-left: 150px solid transparent;
         border-right: 150px solid transparent;
-        border-bottom: 150px solid #ffe553;
+        border-bottom: 150px solid var(--text-color-yellow);
     }
 
     
 }
 
 @media screen and (max-width: 1024px) {
+    .tooltip-box{
+        top: -20px;
+        right: 60px;
+    }
     .carousel h1{
         left: 150px;
         width: 100px;
@@ -670,17 +690,17 @@ footer a{
         position: absolute;
         width: 400px;
         height: 400px;
-        background-color: var(--text-color-hover);
+        background-color: var(--text-color-red);
         border-radius: 50%;
     }
     .elemento-2 .box{
         position: absolute;
         width: 400px;
         height: 450px;
-        background-color: var(--text-color-active);
+        background-color: var(--text-color-blue);
     }
     .banner .right{
-        background-color: #ffe553;
+        background-color: var(--text-color-yellow);
         margin-left: 0vw;
     }
     .left{
@@ -713,6 +733,10 @@ footer a{
 
 
 @media screen and (max-width: 768px) {
+    .tooltip-box{
+        top: -20px;
+        right: 80px;
+    }
     .carousel h1{
         left: 80px;
         width: 100px;
@@ -772,17 +796,17 @@ footer a{
         top: 50px;
         width: 400px;
         height: 400px;
-        background-color: var(--text-color-hover);
+        background-color: var(--text-color-red);
         border-radius: 50%;
     }
     .elemento-2 .box{
         position: absolute;
         width: 400px;
         height: 450px;
-        background-color: var(--text-color-active);
+        background-color: var(--text-color-blue);
     }
     .banner .right{
-        background-color: #ffe553;
+        background-color: var(--text-color-yellow);
         margin-left: 0vw;
     }
     .left{
@@ -820,7 +844,7 @@ footer a{
     }
 
     .list-hobbies h3{
-        color: #000;
+        color: var(--text-color-black);
         font-size: 15pt;
         font-weight: 800;
         font-style: oblique;
@@ -900,14 +924,14 @@ footer a{
         top: 50px;
         width: 300px;
         height: 300px;
-        background-color: var(--text-color-hover);
+        background-color: var(--text-color-red);
         border-radius: 50%;
     }
     .elemento-2 .box{
         position: absolute;
         width: 300px;
         height: 350px;
-        background-color: var(--text-color-active);
+        background-color: var(--text-color-blue);
     }
     .banner .right{
         margin-left: 0vw;
@@ -953,7 +977,7 @@ footer a{
     }
 
     .list-hobbies h3{
-        color: #000;
+        color: var(--text-color-black);
         font-size: 15pt;
         font-weight: 800;
         font-style: oblique;
@@ -977,7 +1001,7 @@ footer a{
         right: 100px;
         height: 100px;
         width: 60px;
-        background-color: var(--text-color-hover);
+        background-color: var(--text-color-red);
     }
     .banner .box:after{
         content: "";
@@ -986,7 +1010,7 @@ footer a{
         right: -100%;
         height: 300px;
         width: 60px;
-        background-color: var(--text-color-hover);
+        background-color: var(--text-color-red);
     }
     .banner .box-2{
         position: absolute;
@@ -994,7 +1018,7 @@ footer a{
         right: 100px;
         height: 300px;
         width: 80px;
-        background-color: var(--text-color-active);
+        background-color: var(--text-color-blue);
     }
     .banner .box-2:after{
         content: "";
@@ -1002,7 +1026,7 @@ footer a{
         right: 100%;
         height: 300px;
         width: 60px;
-        background-color: var(--text-color-hover);
+        background-color: var(--text-color-red);
     }
     .banner .triangle{
         position: absolute;
@@ -1013,13 +1037,13 @@ footer a{
         height: 0;
         border-left: 100px solid transparent;
         border-right: 100px solid transparent;
-        border-bottom: 150px solid #ffe553;
+        border-bottom: 150px solid var(--text-color-yellow);
     }
     .perfil{
         width: 111vw;
         height: 115vh;
         transition: .7s;
-        background-color: var(--text-color-active);
+        background-color: var(--text-color-blue);
         position: absolute;
         top: 0;
         left: 0;
@@ -1033,6 +1057,17 @@ footer a{
 
 
 @media screen and (max-width: 425px) {
+    .right{
+        margin-right: 5vw;
+    }
+    .left{
+        padding-left: 5vw;
+    }
+   
+    .tooltip-box{
+        top: -20px;
+        right: 20px;
+    }
     .carousel h1{
         left: 50px;
         width: 100px;
@@ -1093,14 +1128,14 @@ footer a{
         top: 50px;
         width: 300px;
         height: 300px;
-        background-color: var(--text-color-hover);
+        background-color: var(--text-color-red);
         border-radius: 50%;
     }
     .elemento-2 .box{
         position: absolute;
         width: 300px;
         height: 350px;
-        background-color: var(--text-color-active);
+        background-color: var(--text-color-blue);
     }
     .banner .right{
         margin-left: 0vw;
@@ -1144,7 +1179,7 @@ footer a{
     }
 
     .list-hobbies h3{
-        color: #000;
+        color: var(--text-color-black);
         font-size: 15pt;
         font-weight: 800;
         font-style: oblique;
@@ -1168,7 +1203,7 @@ footer a{
         right: 100px;
         height: 100px;
         width: 60px;
-        background-color: var(--text-color-hover);
+        background-color: var(--text-color-red);
     }
     .banner .box:after{
         content: "";
@@ -1177,7 +1212,7 @@ footer a{
         right: -100%;
         height: 300px;
         width: 60px;
-        background-color: var(--text-color-hover);
+        background-color: var(--text-color-red);
     }
     .banner .box-2{
         position: absolute;
@@ -1185,7 +1220,7 @@ footer a{
         right: 100px;
         height: 300px;
         width: 80px;
-        background-color: var(--text-color-active);
+        background-color: var(--text-color-blue);
     }
     .banner .box-2:after{
         content: "";
@@ -1193,7 +1228,7 @@ footer a{
         right: 100%;
         height: 300px;
         width: 60px;
-        background-color: var(--text-color-hover);
+        background-color: var(--text-color-red);
     }
     .banner .triangle{
         position: absolute;
@@ -1204,13 +1239,13 @@ footer a{
         height: 0;
         border-left: 100px solid transparent;
         border-right: 100px solid transparent;
-        border-bottom: 150px solid #ffe553;
+        border-bottom: 150px solid var(--text-color-yellow);
     }
     .perfil{
         width: 111vw;
         height: 115vh;
         transition: .7s;
-        background-color: var(--text-color-active);
+        background-color: var(--text-color-blue);
         position: absolute;
         top: 0;
         left: 0;
@@ -1257,7 +1292,7 @@ footer a{
         right: 50px;
         height: 0;
         width: 30px;
-        background-color: var(--text-color-active);
+        background-color: var(--text-color-blue);
     }
     .banner .box:after{
         content: "";
@@ -1266,7 +1301,7 @@ footer a{
         right: -100%;
         height: 200px;
         width: 30px;
-        background-color: var(--text-color-hover);
+        background-color: var(--text-color-red);
     }
     .banner .box-2{
         position: absolute;
@@ -1274,7 +1309,7 @@ footer a{
         right: 50px;
         height: 200px;
         width: 60px;
-        background-color: var(--text-color-active);
+        background-color: var(--text-color-blue);
     }
     .banner .box-2:after{
         content: "";
@@ -1282,7 +1317,7 @@ footer a{
         right: 100%;
         height: 200px;
         width: 30px;
-        background-color: var(--text-color-hover);
+        background-color: var(--text-color-red);
     }
     .banner .triangle{
         position: absolute;
@@ -1293,13 +1328,13 @@ footer a{
         height: 0;
         border-left: 60px solid transparent;
         border-right: 60px solid transparent;
-        border-bottom: 150px solid #ffe553;
+        border-bottom: 150px solid var(--text-color-yellow);
     }
     .perfil{
         width: 111vw;
         height: 115vh;
         transition: .7s;
-        background-color: var(--text-color-active);
+        background-color: var(--text-color-blue);
         position: absolute;
         top: 0;
         left: 0;
