@@ -816,7 +816,7 @@ footer a{
         .banner .box:after{
             content: "";
             position: absolute;
-            top: -150px;
+            top: -200px;
             height: 300px;
             width: 100px;
             background-color: var(--text-color-hover);
