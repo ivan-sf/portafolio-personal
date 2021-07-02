@@ -935,206 +935,12 @@ footer a{
 
 }
 
-@media screen and (max-width: 550px) {
-    .carousel h1{
-        left: 50px;
-        width: 100px;
-        font-size: 1.4em;
-        font-weight: 700;
-        z-index: 1000;
-        letter-spacing: 8px;
-    }
-    .carousel h2{
-        position: absolute;
-        width: 100px;
-        font-size: 1em;
-        font-weight: 500;
-        top: 200px;
-        left: 50px;
-        z-index: 1000;
-        opacity: 1;
-    }
-    .carousel h2 span{
-        font-weight: 900;
-        font-style: oblique;
-        opacity: 1;
-    }
-    .carousel h2 a{
-        font-weight: 900;
-        font-style: oblique;
-    }
-    .glider-elemento{
-        display: flex;
-        justify-content: center;
-    }
-    .glider img{
-        max-width: 320px;
-        height: 300px;
-        top: 50px;
-        right: 70px;
-    }
-    .glider-prev{
-        margin-left: 25px;
-    }
-    .glider-prev i{
-        font-size: 2em;
-        opacity: .5;
-    }
-    .glider-next i{
-        font-size: 2em;
-        opacity: .5;
-    }
-    .glider-next{
-        margin-right: 25px;
-    }
-    .glider-img-1{
-        margin-bottom: 50px;
-    }
-    .circle{
-        position: absolute;
-        top: 50px;
-        width: 300px;
-        height: 300px;
-        background-color: var(--text-color-red);
-        border-radius: 50%;
-    }
-    .elemento-2 .box{
-        position: absolute;
-        width: 300px;
-        height: 350px;
-        background-color: var(--text-color-blue);
-    }
-    .elemento-2 .triangle{
-        position: absolute;
-        top: 150px;
-        border-left: 100px solid transparent;
-        border-right: 100px solid transparent;
-        border-top: 200px solid var(--text-color-yellow);
-    }
-    .banner .right{
-        margin-left: 0vw;
-    }
-    .left{
-        padding-left: 0vw;
-        margin-right: 61vw;
-    }
-    body{
-        overflow-x: hidden;
-    }
-    header{
-        width: 100vw;
-    }
-    header nav{
-        right: 5vw;
-    }
-    header span{
-        display: none;
-    }
-    .banner .left h1{
-        font-size: 3.5em;
-    }
-    .banner .left h2{
-        width: 350px;
-        font-size: 2.2em;
-    }
-
-    .tweet-profile{
-        width: 300px;
-    }
-
-    .tweet-profile h2{
-        font-size: 16pt;
-    }
-
-        
-    .list-hobbies{
-        font-family: 'Roboto', sans-serif;
-        margin-top: 120px;
-        line-height : 10px;
-        padding-left: 5vw;
-    }
-
-    .list-hobbies h3{
-        color: var(--text-color-black);
-        font-size: 15pt;
-        font-weight: 800;
-        font-style: oblique;
-        text-decoration: underline;
-        letter-spacing: 2px;
-    }
-    .list-hobbies ul{
-        line-height: 50px;
-        margin-top: 30px;
-    }
-
-    .list-hobbies ul li{
-        font-size: 13pt;
-        list-style: none;
-        font-weight: 500;
-    }
-    
-    .banner .box{
-        position: absolute;
-        top: 200px;
-        right: 100px;
-        height: 100px;
-        width: 60px;
-        background-color: var(--text-color-red);
-    }
-    .banner .box:after{
-        content: "";
-        position: absolute;
-        top: -150px;
-        right: -100%;
-        height: 300px;
-        width: 60px;
-        background-color: var(--text-color-red);
-    }
-    .banner .box-2{
-        position: absolute;
-        top: 50px;
-        right: 100px;
-        height: 300px;
-        width: 80px;
-        background-color: var(--text-color-blue);
-    }
-    .banner .box-2:after{
-        content: "";
-        position: absolute;
-        right: 100%;
-        height: 300px;
-        width: 60px;
-        background-color: var(--text-color-red);
-    }
-    .banner .triangle{
-        position: absolute;
-        z-index: 2000;
-        top: 200px;
-        width: 0;
-        right: 40px;
-        height: 0;
-        border-left: 100px solid transparent;
-        border-right: 100px solid transparent;
-        border-bottom: 150px solid var(--text-color-yellow);
-    }
-    .perfil{
-        width: 111vw;
-        height: 115vh;
-        transition: .7s;
-        background-color: var(--text-color-blue);
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 11000;
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        padding-top: 5vh;
-    }
-}
-
 
 @media screen and (max-width: 425px) {
+    body{
+        min-width: 100vw;
+        background-color: #f53b3b;
+    }
     .right{
         margin-right: 5vw;
     }
@@ -1320,22 +1126,13 @@ footer a{
         border-bottom: 150px solid var(--text-color-yellow);
     }
     .perfil{
-        width: 111vw;
-        height: 115vh;
-        transition: .7s;
-        background-color: var(--text-color-blue);
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 11000;
-        opacity: 0;
-        visibility: hidden;
         display: flex;
+        flex-direction: column;
         padding-top: 5vh;
     }
 }
 
-
+/*
 
 @media screen and (max-width: 375px) {
     .carousel h1{
@@ -1409,20 +1206,7 @@ footer a{
         border-right: 60px solid transparent;
         border-bottom: 150px solid var(--text-color-yellow);
     }
-    .perfil{
-        width: 111vw;
-        height: 115vh;
-        transition: .7s;
-        background-color: var(--text-color-blue);
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 11000;
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        padding-top: 5vh;
-    }
+    
 }
 
 
