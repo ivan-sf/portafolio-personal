@@ -1103,8 +1103,8 @@ footer a{
     }
     .perfil{
         display: flex;
-        width: 120vw;
-        height: 120vh;
+        width: 102vw;
+        height: 102vh;
         padding-top: 5vh;
     }
 }
