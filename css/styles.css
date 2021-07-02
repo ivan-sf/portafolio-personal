@@ -1010,7 +1010,13 @@ footer a{
         height: 350px;
         background-color: var(--text-color-blue);
     }
- 
+    .elemento-2 .triangle{
+        position: absolute;
+        top: 150px;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-top: 200px solid var(--text-color-yellow);
+    }
     header span{
         display: none;
     }
