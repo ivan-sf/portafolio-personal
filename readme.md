@@ -1,5 +1,4 @@
-[![](Ivan Santander)](https://thumbs.subefotos.com/acf57fc07952fd1636468973eebe24eao.jpg)
-
+[![](dsad)](https://jquery-plugins.net/image/plugin/gliderjs-blazingly-fast-lightweight-dependency-free-carousel.png)
 [TOC]
 
 #### Idea
