@@ -173,7 +173,7 @@ header h1 a:hover .fa-hidden{
     text-decoration: underline;
 }
 .banner h2:hover .fa-hidden{
-    color: var(--text-color-black);
+    color: #000;
     display: inline;
 }
 .banner .box{
