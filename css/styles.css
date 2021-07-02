@@ -446,6 +446,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 20px;
@@ -1102,7 +1103,8 @@ footer a{
     }
     .perfil{
         display: flex;
-        flex-direction: column;
+        width: 120vw;
+        height: 120vh;
         padding-top: 5vh;
     }
 }
