@@ -636,7 +636,7 @@ footer a{
 
 @media screen and (max-width: 1024px) {
     .tooltip-box{
-        top: -20px;
+        top: 25px;
         right: 60px;
     }
     .carousel h1{
@@ -700,7 +700,6 @@ footer a{
         background-color: var(--text-color-blue);
     }
     .banner .right{
-        background-color: var(--text-color-yellow);
         margin-left: 0vw;
     }
     .left{
@@ -806,7 +805,6 @@ footer a{
         background-color: var(--text-color-blue);
     }
     .banner .right{
-        background-color: var(--text-color-yellow);
         margin-left: 0vw;
     }
     .left{
@@ -1057,6 +1055,7 @@ footer a{
 
 
 @media screen and (max-width: 425px) {
+    @media screen and (max-height: 768px) {
     .right{
         margin-right: 5vw;
     }
