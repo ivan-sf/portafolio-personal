@@ -1,9 +1,9 @@
 
 [TOC]
 
-![](https://i.postimg.cc/85gDXmfp/logo-1-black.png)
-
 #### Idea
+
+![](https://i.postimg.cc/85gDXmfp/logo-1-black.png)
 
 - Un portafolio personal demasiado minimalista enfocado unicamente en el perfil profesional y los proyectos.
 - El proyecto sera un template de momento no tiene gestor de contenido lo ideal es crear un gestor de contenido de mis diferentes diseños.
